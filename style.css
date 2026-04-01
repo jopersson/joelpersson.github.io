@@ -3,7 +3,6 @@
 :root {
   --text: #1a1a1a;
   --muted: #888;
-  --accent: #1a1a1a;
   --bg: #fafaf8;
   --max: 680px;
   --serif: 'Georgia', serif;
@@ -19,7 +18,6 @@ body {
   padding: 0 1.5rem;
 }
 
-/* NAV */
 nav {
   max-width: var(--max);
   margin: 0 auto;
@@ -54,28 +52,25 @@ nav ul a {
 
 nav ul a:hover, nav ul a.active { color: var(--text); }
 
-/* BANNER */
 .banner { width: calc(100% + 3rem); margin-left: -1.5rem; }
 .banner img { width: 100%; height: 280px; object-fit: cover; object-position: center 35%; display: block; }
 .banner-credit { max-width: var(--max); margin: 0.4rem auto 0; font-size: 0.72rem; color: #bbb; text-align: right; letter-spacing: 0.02em; }
 .banner-credit a { color: #bbb; text-decoration: none; }
 .banner-credit em { font-style: italic; }
 
-/* MAIN */
 main {
   max-width: var(--max);
   margin: 0 auto;
   padding-bottom: 6rem;
 }
 
-/* HOME */
 .home-grid {
   display: grid;
   grid-template-columns: 140px 1fr;
   gap: 2.5rem;
+  margin-top: 2.5rem;
   margin-bottom: 3.5rem;
   align-items: start;
-  margin-top: 2.5rem;
 }
 
 .home-grid img {
@@ -109,14 +104,12 @@ main {
 
 .links a:hover { color: var(--text); }
 
-/* DIVIDER */
 hr {
   border: none;
   border-top: 1px solid #ddd;
   margin: 2.5rem 0;
 }
 
-/* SECTION HEADINGS */
 h2 {
   font-family: var(--sans);
   font-size: 0.75rem;
@@ -127,10 +120,7 @@ h2 {
   margin-bottom: 1.6rem;
 }
 
-/* PAPER ENTRIES */
-.paper {
-  margin-bottom: 2rem;
-}
+.paper { margin-bottom: 2rem; }
 
 .paper .title {
   font-family: var(--serif);
@@ -182,7 +172,6 @@ h2 {
 
 .paper .extras a:hover { color: var(--text); }
 
-/* NEWS */
 .news-item {
   display: grid;
   grid-template-columns: 80px 1fr;
@@ -193,7 +182,6 @@ h2 {
 
 .news-item .date { color: var(--muted); }
 
-/* RESPONSIVE */
 @media (max-width: 520px) {
   .home-grid { grid-template-columns: 1fr; }
   .home-grid img { width: 100px; height: 120px; }
